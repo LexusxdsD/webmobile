@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #800080;
+    --hover-color: #6a006a;
+    --background-color: rgba(128, 0, 128, 0.8);
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    /* Шрифт для всего текста */
+    color: var(--text-color);
+    background: linear-gradient(to bottom left, black 50%, rgba(128, 0, 128, 1));
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Выровнять по левому краю */
+    position: relative;
+    /* Относительное позиционирование для контейнера */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    /* Вертикальное выравнивание текста */
+    text-align: left;
+    /* Выравнивание текста по левому краю */
+}
+
+.logo-text h1 {
+    font-family: 'Sigmar', cursive;
+    /* Применяем шрифт Sigmar для заголовка */
+    font-size: 24px;
+    /* Размер шрифта для заголовка */
+    margin: 0;
+    /* Убираем отступы */
+}
+
+.social-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Выровнять по правому краю */
+    margin-top: 10px;
+    /* Уменьшенные отступы */
+    position: absolute;
+    /* Абсолютное позиционирование для перемещения */
+    top: 10px;
+    /* Отступ от верхней грани */
+    right: 10px;
+    /* Отступ от правой грани */
+}
+
+.social-buttons {
+    background-color: yellow;
+    /* Цвет фона для кнопок */
+    border-radius: 8px;
+    /* Закругленные края */
+    padding: 10px;
+    /* Увеличенные отступы внутри контейнера */
+    display: flex;
+    align-items: center;
+    /* Центрирование по вертикали */
+}
+
+.social-buttons .btn {
+    padding: 0;
+    /* Убираем отступы */
+    border: none;
+    /* Убираем рамку */
+}
+
+.social-buttons .social-icon {
+    width: 25px;
+    /* Размер иконки для Telegram */
+    height: 25px;
+    /* Размер иконки для Telegram */
+    object-fit: contain;
+    /* Сохраняем пропорции */
+}
+
+.social-buttons .twitter-icon {
+    width: 45px;
+    /* Размер значка Twitter */
+    height: 35px;
+    /* Размер значка Twitter */
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    /* Вертикальное выравнивание для кнопок */
+    align-items: flex-end;
+    /* Выровнять по правому краю */
+    margin-top: 10px;
+    /* Отступ сверху для размещения под желтым контейнером */
+}
+
+.main-title {
+    font-family: 'Sigmar', cursive;
+    /* Применяем шрифт Sigmar для заголовка */
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slogan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.slogan-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.full-width-divider {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+    width: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.frog-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-content {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.text-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.section-title {
+    font-family: 'Sigmar', cursive;
+    /* Применяем шрифт Sigmar для заголовка секции */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* Размеры кнопок */
+    border-radius: 5px;
+    font-size: 14px;
+    /* Размер шрифта для кнопок */
+    text-align: center;
+    /* Центрировать текст кнопки */
+}
+
+.btn.buy-now {
+    background-color: transparent;
+    /* Без фона для кнопки Buy Now */
+    border: 2px solid var(--primary-color);
+    /* Фиолетовая рамка */
+    color: var(--primary-color);
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+    /* Отступ сверху */
+}
+
+.btn.buy-now:hover {
+    background-color: var(--primary-color);
+    /* Фон при наведении */
+    color: white;
+    /* Цвет текста при наведении */
+}
+
+.footer {
+    text-align: center;
+    padding: 8px;
+    background-color: var(--background-color);
+}
